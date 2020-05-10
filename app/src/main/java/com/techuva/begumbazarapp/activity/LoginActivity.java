@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         InitViews();
-        exitToast = Toast.makeText(getApplicationContext(), "Press back again to exit GPS_NAVI", Toast.LENGTH_SHORT);
+        exitToast = Toast.makeText(getApplicationContext(), loginContext.getResources().getString(R.string.exit_text), Toast.LENGTH_SHORT);
         edt_userName.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
